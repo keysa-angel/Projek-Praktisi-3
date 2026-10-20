@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Website GIS sederhana untuk menampilkan lokasi fasilitas umum, memfilter jenis fasilitas, dan menghitung jarak garis lurus dari titik pengguna ke fasilitas contoh.">
+<title>GeoAkses — Peta Fasilitas</title><link rel="stylesheet" href="style.css">
+</head><body>
+
+<header class="topbar"><a class="brand" href="#">⌖ GeoAkses</a><span class="tag">STUDI KASUS 03</span></header><main class="container">
+<section class="hero"><div><p class="eyebrow">GIS • CLOUD COMPUTING</p><h1>Temukan fasilitas<br><span>di sekitar wilayahmu.</span></h1><p class="muted">Contoh sistem informasi geografis untuk membantu melihat persebaran fasilitas umum.</p></div><div class="hero-mark">⌖</div></section>
+<section class="toolbar"><label>Jenis fasilitas<select id="filter"><option value="Semua">Semua fasilitas</option><option value="Kesehatan">Kesehatan</option><option value="Pendidikan">Pendidikan</option><option value="Publik">Fasilitas publik</option></select></label><div class="legend"><span>● Kesehatan</span><span>● Pendidikan</span><span>● Publik</span></div></section>
+<section class="grid two map-layout"><article class="panel map-panel"><div class="schematic-map" id="map"><div class="road road-a"></div><div class="road road-b"></div><div class="road road-c"></div><div class="river"></div><span class="map-label label-a">Jl. Merdeka</span><span class="map-label label-b">Sungai Contoh</span><div id="pins"></div><div class="user-pin">Kamu</div></div><p class="note">Peta ini bersifat skematis dan bukan peta geografis akurat.</p></article>
+<article class="panel"><div class="panel-head"><div><p class="eyebrow">DAFTAR LOKASI</p><h2>Fasilitas terdata</h2></div><span id="count" class="pill">0 lokasi</span></div><div id="places" class="place-list"></div></article></section>
+<section class="panel"><p class="eyebrow">MENGAPA GIS?</p><h2>Informasi lokasi untuk keputusan</h2><p class="muted">Data lokasi dapat membantu mengenali area yang aksesnya terbatas. Pada sistem nyata, koordinat, skala peta, sumber data, dan pembaruan informasi perlu diverifikasi.</p></section>
+</main><footer>GeoAkses · Contoh integrasi data lokasi dan aplikasi web</footer>
+
+<script src="app.js"></script>
+</body></html>
